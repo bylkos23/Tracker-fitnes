@@ -1,0 +1,18 @@
+mkdir -p /mnt/user-data/outputs/Tracker-fitnes
+cat > /mnt/user-data/outputs/Tracker-fitnes/manifest.json << 'EOF'
+{
+  "name": "Tracker-fitnes 💪",
+  "short_name": "Le bylk",
+  "description": "Tracker musculation personnel de Bylk",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#e94560",
+  "orientation": "portrait",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
+EOF
+echo "manifest done"
